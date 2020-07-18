@@ -14,7 +14,7 @@ class EmailAddressParser
     def parse
     delimiters = [', ', ' ']
     info = @emails.split(Regexp.union(delimiters))
-    info.uniq?
+    info.uniq
   end 
 
 end 
